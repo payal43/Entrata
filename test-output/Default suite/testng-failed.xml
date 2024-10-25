@@ -5,8 +5,9 @@
     <classes>
       <class name="EntrataTests.BaseTest">
         <methods>
+          <include name="verifyTitle"/>
           <include name="testSetUp"/>
-          <include name="login"/>
+          <include name="flush"/>
         </methods>
       </class> <!-- EntrataTests.BaseTest -->
     </classes>

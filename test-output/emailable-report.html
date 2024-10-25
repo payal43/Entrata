@@ -8,37 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">102,010</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">60,405</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">EntrataTests.BaseTest</td><td><a href="#m0">verifyLogo</a></td><td rowspan="1">1729791665994</td><td rowspan="1">10335</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">EntrataTests.BaseTest</td><td><a href="#m1">login</a></td><td rowspan="1">1729791613868</td><td rowspan="1">471</td></tr><tr class="passedeven"><td><a href="#m2">mouseHover</a></td><td rowspan="1">1729791614498</td><td rowspan="1">5539</td></tr><tr class="passedeven"><td><a href="#m3">reqDemo</a></td><td rowspan="1">1729791620039</td><td rowspan="1">45844</td></tr><tr class="passedeven"><td><a href="#m4">verifyTitle</a></td><td rowspan="1">1729791677159</td><td rowspan="1">48</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">EntrataTests.BaseTest</td><td><a href="#m0">login</a></td><td rowspan="1">1729845720754</td><td rowspan="1">284</td></tr><tr class="passedeven"><td><a href="#m1">mouseHover</a></td><td rowspan="1">1729845728032</td><td rowspan="1">527</td></tr><tr class="passedeven"><td><a href="#m2">reqDemo</a></td><td rowspan="1">1729845735416</td><td rowspan="1">7710</td></tr><tr class="passedeven"><td><a href="#m3">signup</a></td><td rowspan="1">1729845750390</td><td rowspan="1">7142</td></tr><tr class="passedeven"><td><a href="#m4">verifyLogo</a></td><td rowspan="1">1729845764917</td><td rowspan="1">54</td></tr><tr class="passedeven"><td><a href="#m5">verifyTitle</a></td><td rowspan="1">1729845772277</td><td rowspan="1">12</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">EntrataTests.BaseTest#verifyLogo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;brand w-nav-brand&apos;]&quot;}
-  (Session info: chrome=130.0.6723.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f75e82a9f338cc76f9ebb16ff97d86a, findElement {using=xpath, value=//a[@class=&apos;brand w-nav-brand&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\payal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62470/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f75e82a9f338cc76f9ebb16ff97d86a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at EntrataTests.BaseTest.verifyLogo(BaseTest.java:181)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">EntrataTests.BaseTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">EntrataTests.BaseTest#mouseHover</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">EntrataTests.BaseTest#reqDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">EntrataTests.BaseTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">EntrataTests.BaseTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">EntrataTests.BaseTest#mouseHover</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">EntrataTests.BaseTest#reqDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">EntrataTests.BaseTest#signup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">EntrataTests.BaseTest#verifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">EntrataTests.BaseTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

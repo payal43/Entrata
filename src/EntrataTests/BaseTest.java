@@ -19,8 +19,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.apache.commons.io.FileUtils;
@@ -28,13 +30,13 @@ public class BaseTest
 {
 	public WebDriverWait wait;
 	public WebDriver driver;
-	@BeforeTest
+	@BeforeMethod
     public void testSetUp()  {
      
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("headless");
         driver = new ChromeDriver();
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
  
         driver.manage().window().maximize();
         driver.get("https://www.entrata.com//");
@@ -57,10 +59,29 @@ public class BaseTest
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 		
 	}
+	
+	//Test to click on signup button then on resident loging and check the title of webPage
+	@Test
+	public void signup()
+	{
+		WebElement ele = driver.findElement(By.className("nav-button"));
+        WebElement element = ele.findElement(By.xpath(".//a[2]"));
+        element.isDisplayed();
+        element.isEnabled();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        driver.findElement(By.xpath("//div[@class='text-block-23']")).click();
+        String actualTitle = driver.getTitle();
+		//to print the title of page
+		System.out.println("title is-----"+actualTitle);
+		String expectedTitle="Welcome to the Resident Portal App";
+		//comparing actual title and expected title
+		Assert.assertEquals(actualTitle,expectedTitle, "Matched");
+
+	}
 
 //	To check if the first row of footer contains only 11 links.
 	@Test
-public void login() throws IOException
+public void footerCount() throws IOException
 {
 	
 	JavascriptExecutor js= (JavascriptExecutor)driver;
@@ -76,14 +97,16 @@ public void login() throws IOException
 	@Test
    public void reqDemo() throws InterruptedException
 {
-		driver.navigate().to("https://go.entrata.com/watch-demo.html");
-		String URL = driver.getCurrentUrl();
-		Assert.assertEquals(URL, "https://go.entrata.com/watch-demo.html");
+		WebElement ele = driver.findElement(By.className("nav-button"));
+        WebElement element = ele.findElement(By.xpath(".//a[1]"));
+        element.isDisplayed();
+        element.isEnabled();
+        //((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 		//to get title
  		String actualTitle = driver.getTitle();
 		//to print the title of page
 		System.out.println("title is-----"+actualTitle);
-		String expectedTitle="Entrata | Optimize Property Management with One Platform";
+		String expectedTitle="Property Management Software | Entrata";
 		//comparing actual title and expected title
 		Assert.assertEquals(actualTitle,expectedTitle, "Matched");
 		
@@ -164,7 +187,7 @@ public void login() throws IOException
 		System.out.println("title is-----"+actualTitle);
 
 		//assign the value of expected title
-		String expectedTitle="Entrata | Optimize Property Management with One Platform";
+		String expectedTitle="Property Management Software | Entrata";
 		//statement to print the expected title
 		System.out.println("expectedtitle...."+expectedTitle);
 
@@ -200,7 +223,7 @@ public void login() throws IOException
 	}
 
 //To close the driver	
-@AfterTest
+@AfterMethod
 public void flush()
 {
 	driver.close();

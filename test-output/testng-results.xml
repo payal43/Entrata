@@ -1,111 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T23:09:37 IST" name="Suite" finished-at="2024-10-24T23:11:19 IST" duration-ms="102010">
+  <suite started-at="2024-10-25T14:11:52 IST" name="Default suite" finished-at="2024-10-25T14:12:52 IST" duration-ms="60405">
     <groups>
     </groups>
-    <test started-at="2024-10-24T23:09:37 IST" name="Test" finished-at="2024-10-24T23:11:19 IST" duration-ms="102010">
+    <test started-at="2024-10-25T14:11:52 IST" name="Default test" finished-at="2024-10-25T14:12:52 IST" duration-ms="60405">
       <class name="EntrataTests.BaseTest">
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:09:37 IST" name="testSetUp" finished-at="2024-10-24T23:10:13 IST" duration-ms="36570" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:11:52 IST" name="testSetUp" finished-at="2024-10-25T14:12:00 IST" duration-ms="8518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="login()[pri:0, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:10:13 IST" name="login" finished-at="2024-10-24T23:10:14 IST" duration-ms="471" status="PASS">
+        <test-method signature="login()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:00 IST" name="login" finished-at="2024-10-25T14:12:01 IST" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="mouseHover()[pri:0, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:10:14 IST" name="mouseHover" finished-at="2024-10-24T23:10:20 IST" duration-ms="5539" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:01 IST" name="flush" finished-at="2024-10-25T14:12:01 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:01 IST" name="testSetUp" finished-at="2024-10-25T14:12:08 IST" duration-ms="6708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="mouseHover()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:08 IST" name="mouseHover" finished-at="2024-10-25T14:12:08 IST" duration-ms="527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHover -->
-        <test-method signature="reqDemo()[pri:0, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:10:20 IST" name="reqDemo" finished-at="2024-10-24T23:11:05 IST" duration-ms="45844" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:08 IST" name="flush" finished-at="2024-10-25T14:12:08 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:08 IST" name="testSetUp" finished-at="2024-10-25T14:12:15 IST" duration-ms="6570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="reqDemo()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:15 IST" name="reqDemo" finished-at="2024-10-25T14:12:23 IST" duration-ms="7710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reqDemo -->
-        <test-method signature="verifyLogo()[pri:0, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:11:05 IST" name="verifyLogo" finished-at="2024-10-24T23:11:16 IST" duration-ms="10335" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='brand w-nav-brand']"}
-  (Session info: chrome=130.0.6723.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f75e82a9f338cc76f9ebb16ff97d86a, findElement {using=xpath, value=//a[@class='brand w-nav-brand']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\payal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62470/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f75e82a9f338cc76f9ebb16ff97d86a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='brand w-nav-brand']"}
-  (Session info: chrome=130.0.6723.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f75e82a9f338cc76f9ebb16ff97d86a, findElement {using=xpath, value=//a[@class='brand w-nav-brand']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\payal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62470/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f75e82a9f338cc76f9ebb16ff97d86a
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at EntrataTests.BaseTest.verifyLogo(BaseTest.java:181)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:23 IST" name="flush" finished-at="2024-10-25T14:12:23 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:23 IST" name="testSetUp" finished-at="2024-10-25T14:12:30 IST" duration-ms="6951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="signup()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:30 IST" name="signup" finished-at="2024-10-25T14:12:37 IST" duration-ms="7142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:37 IST" name="flush" finished-at="2024-10-25T14:12:37 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:37 IST" name="testSetUp" finished-at="2024-10-25T14:12:44 IST" duration-ms="7093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyLogo()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:44 IST" name="verifyLogo" finished-at="2024-10-25T14:12:44 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method signature="verifyTitle()[pri:1, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:11:17 IST" name="verifyTitle" finished-at="2024-10-24T23:11:17 IST" duration-ms="48" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:44 IST" name="flush" finished-at="2024-10-25T14:12:45 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:45 IST" name="testSetUp" finished-at="2024-10-25T14:12:52 IST" duration-ms="7071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyTitle()[pri:1, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:52 IST" name="verifyTitle" finished-at="2024-10-25T14:12:52 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@73cd37c0]" started-at="2024-10-24T23:11:17 IST" name="flush" finished-at="2024-10-24T23:11:19 IST" duration-ms="1911" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:EntrataTests.BaseTest@6283d8b8]" started-at="2024-10-25T14:12:52 IST" name="flush" finished-at="2024-10-25T14:12:52 IST" duration-ms="315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
       </class> <!-- EntrataTests.BaseTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
